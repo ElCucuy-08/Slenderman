@@ -1,0 +1,3 @@
+repository "SlenderMan 2025-10-18_23-32-06/SlenderMan@7971812542901@cloud"
+  path "/"
+    smartbranch "/main"
