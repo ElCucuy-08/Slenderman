@@ -49,13 +49,13 @@ public class SlenderMan : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))//Проверяем,что это тэг Player
-        {
-            Destroy(other.gameObject);//Внешне уничтожаем нашего игрока
-        }
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Player"))//Проверяем,что это тэг Player
+    //    {
+    //        Destroy(other.gameObject);//Внешне уничтожаем нашего игрока
+    //    }
+    //}
     void Teleport()
     {
         newPos = playerCorrectPosition;
