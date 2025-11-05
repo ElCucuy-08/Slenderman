@@ -5,21 +5,22 @@ using UnityEngine.UI;
 
 public class HpBar : MonoBehaviour
 {
-    public float HP = 100;
-    public float MaxHP = 100;
-    public  Image Bar;
+    public float Health = 100;
+    public Slider HpProgress;
 
     private void Start()
     {
-        Bar= GetComponent<Image>();
+        
     }
-
-    private void OnCollisionEnter(Collision collision)
+    private void Update()
     {
-        if (collision.gameObject.tag == "Enemy")
+        HpProgress.value = Health;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag=="Enemy")
         {
-            HP -= 10;
-            Bar.fillAmount = HP / 100f;
+            Health -= 10;
         }
     }
 }
