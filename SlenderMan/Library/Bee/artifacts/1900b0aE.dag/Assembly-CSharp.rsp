@@ -466,6 +466,7 @@
 "Assets/Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
 "Assets/Scripts/Death.cs"
 "Assets/Scripts/HpBar.cs"
+"Assets/Scripts/New_Game.cs"
 "Assets/Scripts/Papers.cs"
 "Assets/Scripts/SlenderMan.cs"
 -langversion:9.0
